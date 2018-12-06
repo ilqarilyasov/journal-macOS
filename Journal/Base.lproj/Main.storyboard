@@ -717,12 +717,14 @@
                         </connections>
                     </splitView>
                     <connections>
+                        <outlet property="entriesController" destination="jzT-C5-lnB" id="qSf-oo-FCj"/>
                         <outlet property="splitView" destination="LsX-Bs-umO" id="Qfh-0H-nZO"/>
                         <segue destination="Wz5-kk-tT9" kind="relationship" relationship="splitItems" id="Nxu-2D-4gf"/>
                         <segue destination="ont-lm-AsH" kind="relationship" relationship="splitItems" id="NG2-sb-F2Z"/>
                     </connections>
                 </splitViewController>
                 <customObject id="YGc-Hg-joz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="jzT-C5-lnB"/>
             </objects>
             <point key="canvasLocation" x="75" y="676"/>
         </scene>
@@ -870,7 +872,7 @@
                 </viewController>
                 <customObject id="WxU-Up-rrb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65" y="1174"/>
+            <point key="canvasLocation" x="-130" y="1174"/>
         </scene>
         <!--Entry Detail View Controller-->
         <scene sceneID="n1O-Yg-IaJ">
@@ -979,7 +981,7 @@
                 </viewController>
                 <customObject id="aZe-jh-rWQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="1174"/>
+            <point key="canvasLocation" x="305" y="1174"/>
         </scene>
     </scenes>
 </document>

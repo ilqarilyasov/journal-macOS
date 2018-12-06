@@ -8,11 +8,19 @@
 
 import Cocoa
 
-class EntriesTableViewController: NSViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+class EntriesTableViewController: NSViewController, EntriesPresenter {
+    
+    // MARK: - Properties
+    
+    @objc dynamic var entriesController: NSArrayController?
+    
+    // MARK: - Actions
+    
+    @IBAction func add(_ sender: Any) {
+        _ = Entry(title: "New Entry", bodyText: "")
     }
     
+    @IBAction func remove(_ sender: Any) {
+        entriesController?.remove(sender)
+    }
 }
